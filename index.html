@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>frame animation</title>
+    <style type="text/css">
+      .box {
+        width: 500px;
+        height: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box"></div>
+    <h1 id="test"></h1>
+    <script type="text/javascript" src="./frame-animation.js"></script>
+    <script type="text/javascript">
+      var sprite = new CanvasSprite({
+        container: '.box',
+        width: 189,
+        height: 239,
+        image: './images/sprite.png',
+        frames: 151,
+        loop: false,
+      })
+      sprite.run()
+    </script>
+  </body>
+</html>
